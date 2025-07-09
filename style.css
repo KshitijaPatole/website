@@ -1,0 +1,108 @@
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: null;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 
+header {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top:100px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}*/
+
+/* Navigation bar */
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+body {
+  padding-top: 50px; /* To prevent content hiding behind navbar */
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #8B0000;
+}
+
+/* Main content area */
+main {
+  padding: 30px 10%;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #8B0000;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+}
+
+/* Footer 
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 500px;
+}*/
+
+/* Utility classes */
+.center {
+  text-align: center;
+}
+
+.btn {
+  background-color: #8B0000;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a02020;
+}
+
+

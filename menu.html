@@ -1,0 +1,296 @@
+<html>
+  <head>
+    <title>menu</title>
+  </head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #fff5e6;
+  margin: 0;
+  padding: 20px;
+}
+
+marquee {
+  background: #ffcc99;
+  color: #8b0000;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.menu-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.dish {
+  flex: 0 0 auto;
+  width: 180px;
+  background: #fffaf0;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  scroll-snap-align: start;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.dish p {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+.dish span {
+  font-weight: bold;
+  color: #000;
+}
+.cart {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  background: #ffe4b5;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff8c00;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #e67300;
+}
+
+
+
+.menu-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.dish {
+  flex: 0 0 auto;
+  width: 180px;
+  background: #fffaf0;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dish p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #e67e22;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart {
+  background: #fff3e0;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    </style>
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="reservations.html">Reservation</a>
+      <a href="contact.html">Contact</a>
+       <a href="reviews.html">Reviews</a>
+    </nav>
+
+</style>
+<body>
+<marquee behavior="scroll" direction="left">✨ Welcome to Royal Feast – Taste Royalty! ✨</marquee>
+<h1 style="text-align:center;">🍽️ Royal Feast Full Menu 🍽️</h1>
+
+<!-- Horizontal scroll container for all dishes -->
+<div class="menu-scroll">
+  <!-- Example Dish -->
+  <div class="dish">
+    <img src="goldenfriedprawns.jpg" alt="Golden Fried Prawns">
+    <p>Golden Fried Prawns <br><span>₹350</span></p>
+    <button onclick="addToCart('Golden Fried Prawns',350)">Add to Cart</button>
+  </div>
+
+  <!-- Add more dishes below -->
+  <div class="dish">
+    <img src="dish10.jpg" alt="Paneer Tikka">
+    <p>Paneer Tikka <br><span>₹250</span></p>
+    <button onclick="addToCart('Paneer Tikka',250)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="dish9.jpg" alt="Chicken Malai">
+    <p>Chicken Malai Kebab <br><span>₹420</span></p>
+    <button onclick="addToCart('Chicken Malai Kebab',420)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="bc.jpg" alt="Butter Chicken">
+    <p>Butter Chicken <br><span>₹420</span></p>
+    <button onclick="addToCart('Butter Chicken',420)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="butter tr.jpg" alt="Butter Tandooi Roti">
+    <p>Butter Tandooi Roti <br><span>₹100</span></p>
+    <button onclick="addToCart('Butter Tandooi Roti',100)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="dish8.jpg" alt="Hyderabadi Biryani">
+    <p>Hyderabadi Biryani <br><span>₹450</span></p>
+    <button onclick="addToCart('Hyderabadi Biryani',450)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="pbm.jpg" alt="Paneer Butter Masala">
+    <p>Paneer Butter Masala <br><span>₹390</span></p>
+    <button onclick="addToCart('Paneer Butter Masala',390)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="naan.jpg" alt="Naan">
+    <p>Naan <br><span>₹120</span></p>
+    <button onclick="addToCart('Naan',120)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="koftacurry.jpg" alt="Kofta Curry">
+    <p>Kofta Curry <br><span>₹300</span></p>
+    <button onclick="addToCart('Kofta Curry',300)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="kulchaa.jpg" alt="Mango Lassi">
+    <p>kulchaa <br><span>₹120</span></p>
+    <button onclick="addToCart('kulchaa',120)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="rasmalai.jpg" alt="Rasmalai">
+    <p>Rasmalai <br><span>₹60</span></p>
+    <button onclick="addToCart('Rasmalai',60)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="ghewars.jpg" alt="Ghewar">
+    <p>Ghewar <br><span>₹120</span></p>
+    <button onclick="addToCart('Ghewar',120)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="mojito.jpg" alt="Mojito">
+    <p>Mojito <br><span>₹90</span></p>
+    <button onclick="addToCart('Mojito',90)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="mangolassi.jpg" alt="Mango Lassi">
+    <p>Mango Lassi <br><span>₹100</span></p>
+    <button onclick="addToCart('Mango Lassi',100)">Add to Cart</button>
+  </div>
+
+  <div class="dish">
+    <img src="MASALA PAAN.jpg" alt="Masala Paan">
+    <p>Masala Paan <br><span>₹70</span></p>
+    <button onclick="addToCart('Masala Paan',70)">Add to Cart</button>
+  </div>
+  <!-- Keep adding more dishes here in same format -->
+</div>
+<center>
+<h2 color:blue>Feast Like Royalty – Discover Our Delicacies</h2>
+</center>
+
+<div class="card">
+  <center>
+    <div class="card">
+    <h2>🛒Your Cart 🛒</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+  </div>
+
+  <script>
+    let total = 0;
+    const cartItems = document.getElementById('cart-items');
+    const totalDisplay = document.getElementById('total');
+
+    function addToCart(name, price) {
+      const li = document.createElement('li');
+      li.textContent = `${name} - ₹${price}`;
+      cartItems.appendChild(li);
+
+      total += price;
+      totalDisplay.textContent = total;
+    }
+  </script>
+  </center>
+</body>
+</html>
